@@ -5,7 +5,7 @@
 const path = require('path')
 const themePath = path.join(__dirname, './src/theme.less')
 module.exports = {
-  // publicPath: './'
+  publicPath: './',
   css: {
     loaderOptions: {
       less: {
