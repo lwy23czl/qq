@@ -8,7 +8,11 @@
       <div class="div0"></div>
       <div class="div1">
         <van-row>
-          <van-col span="4"><img src="../assets/name.png" alt="" class="name_img" /></van-col>
+          <van-col span="4"
+            ><div class="div333"></div>
+            <div class="div111">{{ name1 }}</div></van-col
+          >
+
           <van-col span="14" id="name">
             <span>{{ username }}</span>
             <span class="t1">销假审批中</span>
@@ -47,12 +51,13 @@ export default {
   name: 'Qin',
   props: ['username', 'bj', 'lxr', 'lxrhm', 'calendar'],
   created() {
-    this.init()
+    this.init(), (this.name1 = this.username.slice(1))
   },
   data() {
     return {
       start_time: '',
-      End_time: ''
+      End_time: '',
+      name1: ''
     }
   },
   methods: {
@@ -99,5 +104,21 @@ export default {
 .div0 {
   background-color: #f8f8f8;
   height: 3vw;
+}
+
+.div111 {
+  background-color: #51adff;
+  width: 12vw;
+  height: 12vw;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 12vw;
+  font-size: 4vw;
+  color: #fff;
+}
+.div333 {
+  // background-color: pink;
+  height: 2vw;
 }
 </style>

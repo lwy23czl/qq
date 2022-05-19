@@ -7,7 +7,11 @@
     </div>
     <div class="div0"></div>
     <van-row @click="qjt">
-      <van-col span="4"><img src="../assets/name.png" alt="" class="name_img" /></van-col>
+      <van-col span="4">
+        <!-- <img src="../assets/name.png" alt="" class="name_img" /> -->
+        <div class="div333"></div>
+        <div class="div111">{{ name1 }}</div>
+      </van-col>
       <van-col span="18" class="name">
         <span class="big">已提交请假</span>
         <span>请假类型:事假</span>
@@ -28,7 +32,7 @@
 export default {
   props: ['username', 'bj', 'lxr', 'lxrhm', 'calendar'],
   created() {
-    this.init()
+    this.init(), (this.name1 = this.username.slice(1))
   },
   data() {
     return {
@@ -97,5 +101,20 @@ export default {
 }
 .button {
   border-radius: 20px;
+}
+.div111 {
+  background-color: #51adff;
+  width: 15vw;
+  height: 15vw;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15vw;
+  font-size: 5vw;
+  color: #fff;
+}
+.div333 {
+  // background-color: pink;
+  height: 3vw;
 }
 </style>
