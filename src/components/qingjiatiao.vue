@@ -130,9 +130,7 @@ export default {
 .img11 {
   width: 100%;
 }
-body {
-  // position: relative;
-}
+
 .button {
   position: fixed;
   bottom: 1vw;
