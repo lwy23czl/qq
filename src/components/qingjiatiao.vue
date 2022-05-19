@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="q1q1">
     <div @click="qjt">
       <van-nav-bar title="请假详情" left-arrow fixed />
     </div>
@@ -43,6 +43,12 @@
         </van-cell-group>
       </div>
     </div>
+    <div>
+      <img src="../assets/ppp.jpg" alt="" class="img11" />
+    </div>
+    <div class="last">
+      <van-button class="button" type="info" size="large">提交</van-button>
+    </div>
   </div>
 </template>
 
@@ -80,7 +86,7 @@ export default {
   padding: 12vw 0 0 0;
 }
 .van-col {
-  height: 15vw;
+  height: 17vw;
 }
 .van-row {
   border-bottom: 1px solid #e7e7e7;
@@ -103,7 +109,7 @@ export default {
 }
 .div0 {
   background-color: #f8f8f8;
-  height: 3vw;
+  height: 4vw;
 }
 
 .div111 {
@@ -120,5 +126,16 @@ export default {
 .div333 {
   // background-color: pink;
   height: 2vw;
+}
+.img11 {
+  width: 100%;
+}
+body {
+  // position: relative;
+}
+.button {
+  position: fixed;
+  bottom: 1vw;
+  border-radius: 4vw;
 }
 </style>
